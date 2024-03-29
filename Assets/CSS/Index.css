@@ -1,0 +1,83 @@
+:root {
+
+    --cor-principal: #FF8C00;
+    --cor-fundo: #FFFFFF;
+    --cor-texto-menu: #FFFFFF;
+    --cor-texto-pagina: #000000;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor-fundo);
+
+}
+
+#container {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+header {
+
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-menu);
+    padding: 10px 2.5% 10px 2.5%;
+
+}
+
+header h1 {
+
+    font-weight: 800;
+
+}
+
+header nav a {
+
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 1000;
+    margin-right: 10px;
+    transition: 0.5s linear;
+    cursor: pointer;
+
+}
+
+header nav a:hover {
+
+    color: var(--cor-texto-pagina);
+
+}
+
+main {
+
+    height: 90%;
+    width: 100%;
+    background-image: url("../Images/Wallpaper.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
