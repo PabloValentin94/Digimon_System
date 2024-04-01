@@ -1,3 +1,5 @@
+/* Constantes: */
+
 :root {
 
     --cor-principal: #FF8C00;
@@ -6,6 +8,8 @@
     --cor-texto-pagina: #000000;
 
 }
+
+/* Estilos: */
 
 * {
 
@@ -21,6 +25,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: var(--cor-fundo);
+    overflow-x: hidden;
 
 }
 
@@ -37,7 +42,7 @@ body {
 
 header {
 
-    height: 10%;
+    height: 75px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -51,6 +56,9 @@ header {
 header h1 {
 
     font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -78,6 +86,7 @@ main {
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
+    margin-top: 5px;
     padding: 10px;
 
 }
@@ -129,5 +138,67 @@ main figure img {
 main figure:hover .name {
 
     transform: translateY(0%);
+
+}
+
+/* Responsividade: */
+
+@media (width < 1200px) {
+
+    main {
+
+        grid-template-columns: repeat(4, auto);
+
+    }
+
+}
+
+@media (width < 900px) {
+
+    main {
+
+        height: auto;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(10, 200px);
+        padding: 30px;
+
+    }
+
+}
+
+@media (width < 600px) {
+
+    main {
+
+        width: 70%;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(20, 200px);
+
+    }
+
+}
+
+@media (width <= 450px) {
+
+    header {
+
+        justify-content: center;
+
+    }
+
+    header h1 {
+
+        font-size: 20px;
+
+    }
+
+    header nav {
+
+        display: none;
+        /*flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;*/
+
+    }
 
 }

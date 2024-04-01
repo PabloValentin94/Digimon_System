@@ -1,3 +1,5 @@
+/* Constantes: */
+
 :root {
 
     --cor-principal: #FF8C00;
@@ -6,6 +8,8 @@
     --cor-texto-pagina: #000000;
 
 }
+
+/* Estilos: */
 
 * {
 
@@ -37,7 +41,7 @@ body {
 
 header {
 
-    height: 10%;
+    height: 75px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -79,5 +83,36 @@ main {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+
+}
+
+/* Responsividade: */
+
+@media (width < 600px) {
+
+    header {
+
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+
+    header nav {
+
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 25px;
+
+    }
+
+    main {
+
+        display: none;
+
+    }
 
 }
